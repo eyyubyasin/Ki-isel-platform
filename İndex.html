@@ -1,0 +1,780 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EYYÜB — Tasarımcı & Geliştirici</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Dosyası -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- GLOBAL BİLDİRİM BANNER'I (TOAST) -->
+    <div id="bildirimKutusu" class="bildirim-kutusu">
+      <span id="bildirimMetni">[AĞ] // İNTERNET BAĞLANTISI KESİLDİ</span>
+    </div>
+
+    <!-- ÖZEL FARE İMLECİ & YILDIZ IŞIĞI -->
+    <div id="cursorIsik" class="cursor-isik"></div>
+
+    <!-- YÜKLEME EKRANI (PRELOADER) -->
+    <div id="yuklemeEkrani" class="yukleme-ekrani">
+      <div class="yukleme-icerik">
+        <span id="yuklemeSayi">00</span>
+        <div class="yukleme-bar">
+          <div id="yuklemeCizgi"></div>
+        </div>
+        <p>SAYFA HAZIRLANIYOR</p>
+      </div>
+    </div>
+
+    <!-- MASAÜSTÜ NAVİGASYON -->
+    <header class="ust-bar">
+      <a href="#" class="logo">EYYÜB<span>.</span></a>
+      <nav class="masaustu-navigasyon">
+        <a href="#hakkimda">HAKKINDA</a>
+        <a href="#yetenekler">YETENEKLER</a>
+        <a href="#projeler">PROJELER</a>
+        <a href="#iletisim">İLETİŞİM</a>
+      </nav>
+      <button id="mobilMenuButon" class="mobil-menu-buton">MENÜ</button>
+    </header>
+
+    <!-- MOBİL NAVİGASYON -->
+    <div id="mobilNavigasyon" class="mobil-navigasyon">
+      <div class="mobil-linkler">
+        <a href="#hakkimda">HAKKINDA</a>
+        <a href="#yetenekler">YETENEKLER</a>
+        <a href="#projeler">PROJELER</a>
+        <a href="#iletisim">İLETİŞİM</a>
+      </div>
+    </div>
+
+    <!-- HERO BÖLÜMÜ -->
+    <section class="hero-bolum">
+      <div class="hero-ust">
+        <div class="durum"><i></i> PROJELERE AÇIK</div>
+        <div class="konum">KOCAELİ, TR</div>
+      </div>
+
+      <div class="hero-dekor hero-dekor-1"></div>
+      <div class="hero-dekor hero-dekor-2"></div>
+
+      <div class="hero-baslik">
+        <div class="baslik-satiri">
+          <span class="hero-satir">DİJİTAL</span>
+        </div>
+        <div class="baslik-satiri">
+          <span class="hero-satir vurgu">DENEYİMLER</span>
+        </div>
+        <div class="baslik-satiri">
+          <span class="hero-satir">TASARLIYORUM</span>
+        </div>
+      </div>
+
+      <div class="hero-alt">
+        <div class="hero-aciklama">
+          <p class="saga-kayan-metin">
+            Estetik, hız ve brutalist minimalizmi bir araya getirerek web
+            deneyimleri inşa eden bağımsız geliştirici.
+          </p>
+        </div>
+        <a href="#projeler" class="yuvarlak-buton">
+          <span>KEŞFET</span>
+          <i>↓</i>
+        </a>
+      </div>
+
+      <div class="asagi-gosterge">
+        <span>KAYDIRIN</span>
+        <div class="asagi-cizgi"><span></span></div>
+        <span>01 / 05</span>
+      </div>
+    </section>
+
+    <!-- HAREKETLİ ŞERİT (MARQUEE) -->
+    <div class="hareketli-serit">
+      <div class="serit-icerik">
+        <span
+          >SİZE UYGUN WEB TASARIMI<i>—</i> KİŞİSEL PLATFORM<i>—</i> EYYÜB
+          <i>—</i> TASARIMCI <i>—</i></span
+        >
+        <span
+          >AÖF 1.SINIF ÖĞRENCİSİ <i>—</i> KİŞİSEL PLATFORM<i>—</i> EYYÜB<i>—</i>
+          GELİŞTİRİCİ <i>—</i></span
+        >
+      </div>
+    </div>
+
+    <!-- HAKKIMDA BÖLÜMÜ -->
+    <section id="hakkimda" class="bölüm">
+      <div class="bolum-basligi">
+        <span>[01] // HAKKINDA</span>
+        <span>BİYO</span>
+      </div>
+      <div class="buyuk-metin scroll-reveal">
+        Merhaba ben Eyyüb <span>AÖF 1.sınıf</span> öğrencisiyim bu web sayfasını
+        gelişimlerimi paylaşmak ve sizlere hizmetlerimi sunmak için tasarladım.
+      </div>
+      <div class="hakkimda-grid">
+        <div class="hakkimda-giris scroll-reveal tilt-efekt">
+          <span class="etiket">FELSEFE</span>
+          <p class="">
+            "En iyi kod, yazılmasına gerek kalmadan aynı işi gören koddur.
+            Çalışıyorsa dokunma."
+          </p>
+        </div>
+        <div class="hakkimda-numara">
+          <span>2026</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- YETENEKLER BÖLÜMÜ -->
+    <section id="yetenekler" class="yetenekler">
+      <div class="yetenekler-baslik">
+        <span>[02] // YETENEKLER</span>
+        <span>TEKNOLOJİLER</span>
+      </div>
+      <div class="yetenek-listesi">
+        <div class="yetenek-satiri scroll-reveal tilt-efekt">
+          <span>01</span>
+          <div>HTML5 & CSS3</div>
+          <small>GELİŞİM AŞAMASI</small>
+        </div>
+        <div class="yetenek-satiri scroll-reveal tilt-efekt">
+          <span>02</span>
+          <div>YAKINDA</div>
+          <small>#</small>
+        </div>
+        <div class="yetenek-satiri scroll-reveal tilt-efekt">
+          <span>03</span>
+          <div>YAKINDA</div>
+          <small>#</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJELER BÖLÜMÜ -->
+    <section id="projeler" class="bölüm">
+      <div class="bolum-basligi">
+        <span>[03] // PROJELER</span>
+        <span>PORTFOLYO</span>
+      </div>
+
+      <div class="proje-grid">
+        <!-- 01 VERİYOTA -->
+        <div
+          class="proje-karti gorunur scroll-reveal tilt-efekt"
+          data-baslik="VERİYOTA PROJESİ"
+          data-aciklama="Veriyota uygulaması için hazırlanmış konsept web tasarımı çalışmasıdır."
+          data-site="https://eyyubyasin.github.io/Veriyota-projesi/"
+          data-github="https://github.com/eyyubyasin/Veriyota-projesi"
+        >
+          <div class="proje-gorsel">
+            <span class="proje-numara">01</span>
+            <span class="proje-resim"><img src="proje1.png" alt="" /></span>
+            <div class="proje-yakinda">.</div>
+            <span class="proje-ok">↗</span>
+          </div>
+          <div class="proje-bilgi">
+            <h4>veriyota</h4>
+            <span>UYGULAMA SİTESİ ÇALIŞMAM</span>
+          </div>
+        </div>
+
+        <!-- 02 NEXUS LABS -->
+        <div
+          class="proje-karti gorunur scroll-reveal tilt-efekt"
+          data-baslik="NEXUS LABS"
+          data-aciklama="Modern ön yüz mimarisi ve arayüz bileşenleri ile geliştirilmiş proje."
+          data-site="#"
+          data-github="#"
+        >
+          <div class="proje-gorsel">
+            <span class="proje-numara">02</span>
+            <div class="proje-yakinda">NEXUS LABS</div>
+            <span class="proje-ok">↗</span>
+          </div>
+          <div class="proje-bilgi">
+            <h4>NEXUS LABS</h4>
+            <span>FRONTEND</span>
+          </div>
+        </div>
+
+        <!-- 03 yakında -->
+        <div
+          class="proje-karti gizli-proje tilt-efekt"
+          data-baslik="yakında"
+          data-aciklama="Yeni web uygulaması projesi yakında yayınlanacak."
+          data-site="#"
+          data-github="#"
+        >
+          <div class="proje-gorsel">
+            <span class="proje-numara">03</span>
+            <div class="proje-yakinda">yakında</div>
+            <span class="proje-ok">↗</span>
+          </div>
+          <div class="proje-bilgi">
+            <h4>yakında</h4>
+            <span>APP</span>
+          </div>
+        </div>
+
+        <!-- 04 yakında -->
+        <div
+          class="proje-karti gizli-proje tilt-efekt"
+          data-baslik="yakında"
+          data-aciklama="Hazırlık aşamasında olan yeni proje."
+          data-site="#"
+          data-github="#"
+        >
+          <div class="proje-gorsel">
+            <span class="proje-numara">04</span>
+            <div class="proje-yakinda">yakında</div>
+            <span class="proje-ok">↗</span>
+          </div>
+          <div class="proje-bilgi">
+            <h4>yakında</h4>
+            <span>yakında</span>
+          </div>
+        </div>
+
+        <!-- 05 PROJECT -->
+        <div
+          class="proje-karti gizli-proje tilt-efekt"
+          data-baslik="PROJECT"
+          data-aciklama="$"
+          data-site="#"
+          data-github="#"
+        >
+          <div class="proje-gorsel">
+            <span class="proje-numara">05</span>
+            <div class="proje-yakinda">yakında</div>
+            <span class="proje-ok">↗</span>
+          </div>
+          <div class="proje-bilgi">
+            <h4>PROJECT</h4>
+            <span>/</span>
+          </div>
+        </div>
+
+        <!-- 06 CREATIVE LAB -->
+        <div
+          class="proje-karti gizli-proje tilt-efekt"
+          data-baslik="CREATIVE LAB"
+          data-aciklama="UI/UX tasarım ve deneysel web arayüzleri."
+          data-site="#"
+          data-github="#"
+        >
+          <div class="proje-gorsel">
+            <span class="proje-numara">06</span>
+            <div class="proje-yakinda">CREATIVE LAB</div>
+            <span class="proje-ok">↗</span>
+          </div>
+          <div class="proje-bilgi">
+            <h4>CREATIVE LAB</h4>
+            <span>UI/UX DESIGN</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Daha Fazla Yükle Butonu -->
+      <div class="daha-fazla-container">
+        <button id="dahaFazlaBtn" class="daha-fazla-btn">
+          DAHA FAZLA GÖSTER
+        </button>
+      </div>
+    </section>
+
+    <!-- İLETİŞİM BÖLÜMÜ -->
+    <section id="iletisim" class="bölüm">
+      <div class="satis-icerik">
+        <div class="scroll-reveal">
+          <span class="etiket">[04] // İLETİŞİM</span>
+          <h2 class="satis-baslik">
+            ULAŞIM <em>SAĞLAMAK</em> İÇİN TIKLAYINIZ.
+          </h2>
+          <a
+            href="mailto:eyyubiletisim@gmail.com?subject=Iletisim%20Formu&body=Merhaba,%20sitenizden%20ulasiyorum."
+            class="mail-buton"
+          >
+            E-posta Gönder
+          </a>
+        </div>
+        <div class="iletisim-linkleri scroll-reveal">
+          <a href="https://github.com/eyyubyasin" class="iletisim-link"
+            >GITHUB <span>↗</span></a
+          >
+          <a
+            href="https://www.linkedin.com/in/eyy%C3%BCb-yasin-dursun-727663439?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+            class="iletisim-link"
+            >LINKEDIN <span>↗</span></a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-ust">
+        <span>EYYÜB © 2026</span>
+        <div class="footer-sag">
+          <span>TÜM HAKLARI SAKLIDIR.</span>
+          <button id="gizlilikBtn" class="gizlilik-link">
+            GİZLİLİK POLİTİKASI
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <!-- PROJE ÖN İZLEME MODAL (TEK VE EN ALTTA) -->
+    <div id="projeModal" class="proje-modal-arkaplan">
+      <div class="proje-modal-kart">
+        <div class="proje-modal-baslik">
+          <h3 id="modalProjeBaslik">[PROJECT] // PROJE DETAYI</h3>
+          <button id="projeModalKapat" class="proje-kapat-btn">
+            &times;
+          </button>
+        </div>
+        <div class="proje-modal-govde">
+          <h4>Hakkında</h4>
+          <p id="modalProjeAciklama">Proje açıklaması yükleniyor...</p>
+
+          <div class="proje-modal-linkler">
+            <a
+              id="modalSiteLink"
+              href="#"
+              target="_blank"
+              class="proje-link-btn site-btn"
+              >SİTEYE GİT ↗</a
+            >
+            <a
+              id="modalGithubLink"
+              href="#"
+              target="_blank"
+              class="proje-link-btn github-btn"
+              >GITHUB ↗</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GİZLİLİK MODAL -->
+    <div id="gizlilikModal" class="gizlilik-modal-arkaplan">
+      <div class="gizlilik-modal-kart">
+        <div class="gizlilik-modal-baslik">
+          <span>[PRIVACY] // GİZLİLİK BİLDİRİMİ</span>
+          <button id="modalKapat" class="gizlilik-kapat-btn">&times;</button>
+        </div>
+        <div class="gizlilik-modal-govde">
+          <p>
+            Bu kişisel platform, ziyaretçi gizliliğine ve kişisel verilerin
+            korunmasına önem vermektedir.
+          </p>
+
+          <h4>1. Veri Toplama ve İletişim</h4>
+          <p>
+            Sitede yer alan iletişim bağlantıları veya e-posta vasıtasıyla
+            paylaştığınız ad, e-posta adresi ve mesaj içerikleri yalnızca
+            sizinle iletişim kurmak amacıyla kullanılır.
+          </p>
+
+          <h4>2. Çerezler ve Analiz</h4>
+          <p>
+            Sitede kullanıcı deneyimini artırmak ve temel ziyaretçi
+            istatistiklerini anlamak adına anonim analiz araçları veya yerel
+            depolama (localStorage) kullanılabilir. Bu veriler hiçbir şekilde
+            üçüncü taraf reklam ağlarıyla paylaşılmaz veya satılmaz.
+          </p>
+
+          <h4>3. Harici Bağlantılar</h4>
+          <p>
+            Bu platform GitHub, sosyal medya veya dış projelere yönlendiren
+            bağlantılar içerebilir. Yönlendirilen harici sitelerin gizlilik
+            politikalarından kendileri sorumludur.
+          </p>
+          <h4>YARDIM</h4>
+          <p>eğer sitenin bir kusuru varsa lütfen<!-- Kopyalanmasını istediğin kelimeye 'kopyala-metin' sınıfı ve data-kopyala niteliği veriyoruz -->
+<span class="kopyala-metin" onclick="metniKopyala(this)" style="font-weight: bold;">eyyubiletisim@gmail.com</span>   e-postası ile bilgilendiriniz.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- JAVASCRIPT KODLARI -->
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        // 1. PRELOADER
+        const yuklemeEkrani = document.getElementById("yuklemeEkrani");
+        const yuklemeSayi = document.getElementById("yuklemeSayi");
+        const yuklemeCizgi = document.getElementById("yuklemeCizgi");
+
+        let sayac = 0;
+
+        const interval = setInterval(() => {
+          sayac += Math.floor(Math.random() * 8) + 4;
+
+          if (sayac >= 100) {
+            sayac = 100;
+            clearInterval(interval);
+
+            setTimeout(() => {
+              if (yuklemeEkrani) {
+                yuklemeEkrani.style.transform = "translateY(-100%)";
+                yuklemeEkrani.style.opacity = "0";
+
+                setTimeout(() => {
+                  yuklemeEkrani.style.display = "none";
+                }, 800);
+              }
+            }, 200);
+          }
+
+          if (yuklemeSayi)
+            yuklemeSayi.textContent = sayac < 10 ? "0" + sayac : sayac;
+          if (yuklemeCizgi) yuklemeCizgi.style.width = sayac + "%";
+        }, 30);
+
+        // 2. MOBİL MENÜ
+        const mobilMenuButon = document.getElementById("mobilMenuButon");
+        if (mobilMenuButon) {
+          mobilMenuButon.addEventListener("click", () => {
+            document.body.classList.toggle("menu-acik");
+          });
+        }
+
+        document.querySelectorAll(".mobil-linkler a").forEach((link) => {
+          link.addEventListener("click", () => {
+            document.body.classList.remove("menu-acik");
+          });
+        });
+
+        // 3. DAHA FAZLA PROJE GÖSTER
+        const dahaFazlaBtn = document.getElementById("dahaFazlaBtn");
+        const yuklenecekAdet = 3;
+
+        if (dahaFazlaBtn) {
+          dahaFazlaBtn.addEventListener("click", () => {
+            const gizliProjeler = document.querySelectorAll(
+              ".proje-karti.gizli-proje",
+            );
+
+            for (
+              let i = 0;
+              i < yuklenecekAdet && i < gizliProjeler.length;
+              i++
+            ) {
+              gizliProjeler[i].classList.remove("gizli-proje");
+              gizliProjeler[i].classList.add("gorunur");
+            }
+
+            const kalanGizli = document.querySelectorAll(
+              ".proje-karti.gizli-proje",
+            );
+            if (kalanGizli.length === 0) {
+              dahaFazlaBtn.style.display = "none";
+            }
+          });
+        }
+
+        // 4. SCROLLSPY (ÜST MENÜ AKTİF SEÇİCİ)
+        const bolumler = document.querySelectorAll("section[id]");
+        const navLinkleri = document.querySelectorAll(".masaustu-navigasyon a");
+
+        function aktifMenuyuGuncelle() {
+          let mevcutBolumId = "";
+          const scrollY = window.scrollY;
+
+          bolumler.forEach((bolum) => {
+            const bolumUst = bolum.offsetTop - 150;
+            const bolumYukseklik = bolum.offsetHeight;
+
+            if (scrollY >= bolumUst && scrollY < bolumUst + bolumYukseklik) {
+              mevcutBolumId = bolum.getAttribute("id");
+            }
+          });
+
+          navLinkleri.forEach((link) => {
+            link.classList.remove("aktif-link");
+            if (link.getAttribute("href") === `#${mevcutBolumId}`) {
+              link.classList.add("aktif-link");
+            }
+          });
+        }
+
+        // 5. SAĞA KAYAN METİNLER
+        const kayanMetinler = document.querySelectorAll(".saga-kayan-metin");
+
+        function metinleriKaydir() {
+          const scrollY = window.scrollY;
+          kayanMetinler.forEach((metin) => {
+            const kaymaMiktari = scrollY * 0.05;
+            metin.style.transform = `translateX(${kaymaMiktari}px)`;
+          });
+        }
+
+        // 6. SCROLL REVEAL (AŞAĞIDAN GELEN ELEMANLAR)
+        const revealElemanlar = document.querySelectorAll(".scroll-reveal");
+        const revealObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("gorundu");
+              }
+            });
+          },
+          { threshold: 0.15 }
+        );
+
+        revealElemanlar.forEach((el) => revealObserver.observe(el));
+
+        // SCROLL OLAYLARINI DİNLE
+        window.addEventListener("scroll", () => {
+          aktifMenuyuGuncelle();
+          metinleriKaydir();
+        });
+
+        aktifMenuyuGuncelle();
+
+        // 7. YILDIZ KAYMASI VE ÖZEL MOUSE İMLECİ
+        const cursorIsik = document.getElementById("cursorIsik");
+        const isTouchDevice = window.matchMedia("(pointer: coarse)").matches;
+
+        if (cursorIsik && !isTouchDevice) {
+          let sonX = 0;
+          let sonY = 0;
+
+          window.addEventListener("mousemove", (e) => {
+            const posX = e.clientX;
+            const posY = e.clientY;
+
+            cursorIsik.style.left = `${posX}px`;
+            cursorIsik.style.top = `${posY}px`;
+
+            const mesafe = Math.hypot(posX - sonX, posY - sonY);
+            if (mesafe > 8) {
+              yildizOlustur(posX, posY);
+              sonX = posX;
+              sonY = posY;
+            }
+          });
+
+          function yildizOlustur(x, y) {
+            const yildiz = document.createElement("div");
+            yildiz.className = "yildiz-parcacik";
+
+            const boyut = Math.random() * 4 + 3;
+            yildiz.style.width = `${boyut}px`;
+            yildiz.style.height = `${boyut}px`;
+
+            const sapmaX = (Math.random() - 0.5) * 12;
+            const sapmaY = (Math.random() - 0.5) * 12;
+
+            yildiz.style.left = `${x + sapmaX}px`;
+            yildiz.style.top = `${y + sapmaY}px`;
+
+            document.body.appendChild(yildiz);
+
+            setTimeout(() => {
+              yildiz.remove();
+            }, 800);
+          }
+        }
+
+        // 8. 3D TILT VE FAREYİ TAKİP EDEN ISIK EFEKTİ
+        const tiltElemanlari = document.querySelectorAll(".tilt-efekt");
+
+        if (!isTouchDevice) {
+          tiltElemanlari.forEach((el) => {
+            el.addEventListener("mousemove", (e) => {
+              const rect = el.getBoundingClientRect();
+              const x = e.clientX - rect.left;
+              const y = e.clientY - rect.top;
+
+              const centerX = rect.width / 2;
+              const centerY = rect.height / 2;
+              const rotateX = ((y - centerY) / centerY) * -6;
+              const rotateY = ((x - centerX) / centerX) * 6;
+
+              el.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.01, 1.01, 1.01)`;
+              el.style.setProperty("--mouse-x", `${x}px`);
+              el.style.setProperty("--mouse-y", `${y}px`);
+            });
+
+            el.addEventListener("mouseleave", () => {
+              el.style.transform = "perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)";
+            });
+          });
+        }
+      });
+
+      // GİZLİLİK MODAL KONTROLÜ
+      const gizlilikModal = document.getElementById("gizlilikModal");
+      const gizlilikBtn = document.getElementById("gizlilikBtn");
+      const modalKapat = document.getElementById("modalKapat");
+
+      if (gizlilikBtn && gizlilikModal) {
+        gizlilikBtn.addEventListener("click", () => {
+          gizlilikModal.style.display = "flex";
+        });
+
+        if (modalKapat) {
+          modalKapat.addEventListener("click", () => {
+            gizlilikModal.style.display = "none";
+          });
+        }
+
+        window.addEventListener("click", (e) => {
+          if (e.target === gizlilikModal) {
+            gizlilikModal.style.display = "none";
+          }
+        });
+      }
+
+      // PROJE MODAL KONTROLÜ
+      const projeModal = document.getElementById("projeModal");
+      const projeModalKapat = document.getElementById("projeModalKapat");
+      const modalProjeBaslik = document.getElementById("modalProjeBaslik");
+      const modalProjeAciklama = document.getElementById("modalProjeAciklama");
+      const modalSiteLink = document.getElementById("modalSiteLink");
+      const modalGithubLink = document.getElementById("modalGithubLink");
+
+      document.addEventListener("click", (e) => {
+        const kart = e.target.closest(".proje-karti");
+
+        if (kart) {
+          const baslik = kart.getAttribute("data-baslik") || "PROJE DETAYI";
+          const aciklama =
+            kart.getAttribute("data-aciklama") ||
+            "Bu proje için henüz açıklama eklenmedi.";
+          const site = kart.getAttribute("data-site") || "#";
+          const github = kart.getAttribute("data-github") || "#";
+
+          if (modalProjeBaslik)
+            modalProjeBaslik.textContent = `[PROJECT] // ${baslik}`;
+          if (modalProjeAciklama) modalProjeAciklama.textContent = aciklama;
+          if (modalSiteLink) modalSiteLink.href = site;
+          if (modalGithubLink) modalGithubLink.href = github;
+
+          if (projeModal) {
+            projeModal.style.display = "flex";
+            document.body.style.overflow = "hidden";
+          }
+        }
+      });
+
+      if (projeModalKapat) {
+        projeModalKapat.addEventListener("click", (e) => {
+          e.stopPropagation();
+          if (projeModal) {
+            projeModal.style.display = "none";
+            document.body.style.overflow = "auto";
+          }
+        });
+      }
+
+      window.addEventListener("click", (e) => {
+        if (e.target === projeModal) {
+          projeModal.style.display = "none";
+          document.body.style.overflow = "auto";
+        }
+      });
+
+      // SAĞ TIK VE F12 KORUMASI
+      document.addEventListener("contextmenu", (e) => {
+        e.preventDefault();
+      });
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "F12") e.preventDefault();
+        if (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "i")) e.preventDefault();
+        if (e.ctrlKey && e.shiftKey && (e.key === "J" || e.key === "j")) e.preventDefault();
+        if (e.ctrlKey && e.shiftKey && (e.key === "C" || e.key === "c")) e.preventDefault();
+        if (e.ctrlKey && (e.key === "U" || e.key === "u")) e.preventDefault();
+      });
+
+      // GÜVENLİK, AĞ VE HATA YÖNETİM SİSTEMİ
+      const bildirimKutusu = document.getElementById("bildirimKutusu");
+      const bildirimMetni = document.getElementById("bildirimMetni");
+      let bildirimZamanlayici = null;
+
+      function bildirimGoster(mesaj, tur = "basari", sure = 4000) {
+        if (!bildirimKutusu || !bildirimMetni) return;
+
+        clearTimeout(bildirimZamanlayici);
+
+        bildirimMetni.textContent = mesaj;
+        bildirimKutusu.className = "bildirim-kutusu aktif " + tur;
+
+        if (sure > 0) {
+          bildirimZamanlayici = setTimeout(() => {
+            bildirimKutusu.classList.remove("aktif");
+          }, sure);
+        }
+      }
+
+      window.addEventListener("offline", () => {
+        bildirimGoster("[AĞ] // İNTERNET BAĞLANTISI KESİLDİ", "hata", 0);
+      });
+
+      window.addEventListener("online", () => {
+        bildirimGoster("[AĞ] // BAĞLANTI YENİDEN SAĞLANDI", "basari", 3000);
+      });
+
+      if (!navigator.onLine) {
+        bildirimGoster("[AĞ] // ÇEVRİMDIŞI MODDA ÇALIŞILIYOR", "hata", 0);
+      }
+
+      if ('connection' in navigator) {
+        const conn = navigator.connection;
+        if (conn.effectiveType === '2g' || conn.saveData) {
+          bildirimGoster("[SİSTEM] // YAVAŞ BAĞLANTI ALGILANDI", "hata", 5000);
+        }
+      }
+
+      window.addEventListener("error", (e) => {
+        console.error("Yakalanamayan Hata:", e.error);
+        bildirimGoster("[SİSTEM HATASI] // BİR BİLEŞEN YÜKLENEMEDİ", "hata", 4000);
+      });
+
+      window.addEventListener("unhandledrejection", (e) => {
+        console.error("Asenkron Hata:", e.reason);
+        bildirimGoster("[VERİ HATASI] // İŞLEM TAMAMLANALAMADI", "hata", 4000);
+      });
+
+      document.addEventListener("dragstart", (e) => {
+        if (e.target.tagName === "IMG") {
+          e.preventDefault();
+        }
+      });
+      function metniKopyala(element) {
+    const metin = element.innerText;
+    
+    // Metni panoya kopyala
+    navigator.clipboard.writeText(metin).then(() => {
+        // Görsel geri bildirim (Kopyalandı efekti)
+        const orijinalMetin = element.innerText;
+        element.innerText = "Kopyalandı! ✓";
+        element.style.backgroundColor = "#ffcc00";
+        element.style.color = "#000000";
+
+        // 1.5 saniye sonra eski haline döndür
+        setTimeout(() => {
+            element.innerText = orijinalMetin;
+            element.style.backgroundColor = "rgba(255, 204, 0, 0.15)";
+            element.style.color = "#ffcc00";
+        }, 1500);
+    });
+}
+    </script>
+  </body>
+</html>
