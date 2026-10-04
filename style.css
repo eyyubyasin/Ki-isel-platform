@@ -943,3 +943,17 @@ body.menu-acik .mobil-navigasyon {
         display: none !important;
     }
 }
+/* Proje Resim Düzenlemesi */
+.proje-resim {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.proje-resim img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Resmi kutuya kırpıp tam oturtur */
+    object-position: center;
+    display: block;
+}
