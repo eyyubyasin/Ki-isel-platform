@@ -280,6 +280,13 @@ body.menu-acik .mobil-navigasyon {
     color: var(--beyaz-soluk);
     line-height: 1.6;
 }
+    /* Mobilde uzun başlıkların taşmasını ve M harfinin kesilmesini önlemeye yarar kod */
+    .hero-satir {
+        font-size: clamp(26px, 7vw, 48px) !important;
+        letter-spacing: -0.04em;
+        white-space: nowrap;
+    }
+
 
 .yuvarlak-buton {
     width: 120px;
