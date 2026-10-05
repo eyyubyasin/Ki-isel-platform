@@ -788,7 +788,15 @@ body.menu-acik .mobil-navigasyon {
     .hakkimda-grid, .satis-icerik { grid-template-columns: 1fr; }
     .hakkimda-numara { display: none; }
     .yetenek-satiri { grid-template-columns: 40px 1fr auto; }
+
+    /* Mobilde uzun başlıkların taşmasını ve M harfinin kesilmesini önler */
+    .hero-satir {
+        font-size: clamp(32px, 8.5vw, 64px);
+        word-break: normal;
+        overflow: visible;
+    }
 }
+
 
 /* =============================================================
    GÜVENLİK & UYARI BİLDİRİM KUTUSU (TOAST)
